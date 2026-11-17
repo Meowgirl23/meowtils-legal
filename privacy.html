@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meowtils 如何在本机处理 Minecraft 游戏状态并通过 Discord 分享活动，以及如何管理这些信息。">
+  <title>Meowtils 隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f4f5fb;
+      --surface: #fff;
+      --text: #202439;
+      --muted: #4f5870;
+      --line: #d8ddeb;
+      --link: #42348e;
+      --focus: #6c50c0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #151623;
+        --surface: #1e2030;
+        --text: #eeeff8;
+        --muted: #bbc0d7;
+        --line: #3b415b;
+        --link: #c8bbff;
+        --focus: #c8bbff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Geist, system-ui, "Microsoft YaHei UI", "PingFang SC", sans-serif;
+      font-size: 1rem;
+      line-height: 1.75;
+      overflow-wrap: anywhere;
+    }
+    .wrap {
+      width: min(calc(100% - 2rem), 46rem);
+      margin-inline: auto;
+    }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .site-header .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.35rem 1.25rem;
+      padding-block: 0.85rem;
+    }
+    .brand { font-weight: 700; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 1.15rem;
+      font-size: 0.9375rem;
+    }
+    a {
+      color: var(--link);
+      text-underline-offset: 0.19em;
+    }
+    a[aria-current="page"] {
+      color: var(--text);
+      font-weight: 600;
+    }
+    a:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+    article {
+      margin-block: clamp(1.1rem, 4vw, 2.5rem);
+      padding: clamp(1.15rem, 5vw, 2.8rem);
+      border: 1px solid var(--line);
+      border-radius: 0.85rem;
+      background: var(--surface);
+    }
+    h1, h2 { line-height: 1.3; }
+    h1 { margin: 0 0 0.35rem; font-size: clamp(1.85rem, 5vw, 2.55rem); }
+    h2 { margin: 0 0 0.6rem; font-size: 1.24rem; }
+    .updated { margin-top: 0; color: var(--muted); font-size: 0.9rem; }
+    section { margin-top: 1.75rem; }
+    p { margin: 0.65rem 0 0; }
+    ul { margin: 0.55rem 0 0; padding-inline-start: 1.45rem; }
+    li + li { margin-top: 0.3rem; }
+    address { margin-top: 0.55rem; font-style: normal; }
+
+    @media print {
+      :root { color-scheme: light; --background: #fff; --surface: #fff; --text: #111; --muted: #333; --link: #222; }
+      .site-header { display: none; }
+      .wrap { width: 100%; }
+      article { margin: 0; padding: 0; border: 0; }
+      h1, h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <span class="brand">Meowtils</span>
+      <nav aria-label="文档导航">
+        <a href="./terms.html">服务条款</a>
+        <a href="./privacy.html" aria-current="page">隐私政策</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article aria-labelledby="document-title">
+      <header>
+        <h1 id="document-title">隐私政策</h1>
+        <p class="updated">最后更新 <time datetime="2026-11-17">2026 年 11 月 17 日</time></p>
+        <p>本政策说明 Meowtils 项目维护者如何处理 Discord 游戏活动分享功能（Rich Presence）及相关支持请求涉及的信息。</p>
+      </header>
+
+      <section>
+        <h2>活动信息及用途</h2>
+        <p>本功能在你的设备上读取 Minecraft 的游戏版本和当前状态（例如位于主菜单或已进入世界），并使用游戏会话的开始时间生成游玩计时。这些信息用于生成和更新 Discord 活动卡片。</p>
+        <p>建立本机连接时，Discord 客户端可能向连接组件返回用于建立会话的基本账号信息，例如 Discord 用户 ID、用户名或头像标识。这些信息由你的设备处理。该功能使用 Discord 客户端已登录的账号来显示活动。</p>
+      </section>
+
+      <section>
+        <h2>发送、显示与保存</h2>
+        <p>Meowtils 将活动信息发送给同一台设备上的 Discord 客户端。Discord 处理这些信息，并根据你的活动分享和隐私设置，向你允许的好友或服务器成员展示。</p>
+        <p>Meowtils 在本机游戏会话期间处理活动信息，没有用于上传或保存这些信息的自有后端。Discord 端的信息处理与活动历史由 Discord 管理，详见 <a href="https://discord.com/privacy">Discord 隐私政策</a>。</p>
+      </section>
+
+      <section id="controls">
+        <h2>管理共享和删除活动历史</h2>
+        <p>你可以在 Discord 的「用户设置 → 活动分享」中控制是否展示活动和谁可以看到。对于已出现在 Discord 的历史记录，可以在个人资料的「活动」页面使用清除游戏历史的选项。操作步骤见 <a href="https://support.discord.com/hc/en-us/articles/7931156448919-Activity-Sharing-on-Discord-FAQ">Discord 活动分享帮助</a>。</p>
+      </section>
+
+      <section>
+        <h2>支持请求</h2>
+        <p>当你主动联系维护者时，我们会收到你提供的联系信息和问题描述，用于答复、调查问题或处理隐私请求。信息会保留至相关请求处理完毕，并在不再需要时删除，适用法律要求保留的情况除外。你可以通过下方入口请求查阅、更正或删除你向维护者提交的个人信息。</p>
+      </section>
+
+      <section>
+        <h2>政策页面的访问</h2>
+        <p>本页面没有项目自己的分析脚本或广告，也不设置自己的 Cookie。GitHub Pages 托管本页面，GitHub 会为安全目的记录访问者的 IP 地址。详情见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。</p>
+      </section>
+
+      <section>
+        <h2>联系与政策更新</h2>
+        <p>如有隐私问题或数据请求，请联系 Meowtils 项目维护者。政策如有调整，维护者会更新本页并标明更新时间。</p>
+        <address>【待填写的公开支持邮箱或私密工单链接】</address>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

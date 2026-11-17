@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meowtils 为 Minecraft 提供的 Discord 游戏活动分享功能的使用条款。">
+  <title>Meowtils 服务条款</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f4f5fb;
+      --surface: #fff;
+      --text: #202439;
+      --muted: #4f5870;
+      --line: #d8ddeb;
+      --link: #42348e;
+      --focus: #6c50c0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #151623;
+        --surface: #1e2030;
+        --text: #eeeff8;
+        --muted: #bbc0d7;
+        --line: #3b415b;
+        --link: #c8bbff;
+        --focus: #c8bbff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Geist, system-ui, "Microsoft YaHei UI", "PingFang SC", sans-serif;
+      font-size: 1rem;
+      line-height: 1.75;
+      overflow-wrap: anywhere;
+    }
+    .wrap {
+      width: min(calc(100% - 2rem), 46rem);
+      margin-inline: auto;
+    }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .site-header .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.35rem 1.25rem;
+      padding-block: 0.85rem;
+    }
+    .brand { font-weight: 700; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 1.15rem;
+      font-size: 0.9375rem;
+    }
+    a {
+      color: var(--link);
+      text-underline-offset: 0.19em;
+    }
+    a[aria-current="page"] {
+      color: var(--text);
+      font-weight: 600;
+    }
+    a:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+    article {
+      margin-block: clamp(1.1rem, 4vw, 2.5rem);
+      padding: clamp(1.15rem, 5vw, 2.8rem);
+      border: 1px solid var(--line);
+      border-radius: 0.85rem;
+      background: var(--surface);
+    }
+    h1, h2 { line-height: 1.3; }
+    h1 { margin: 0 0 0.35rem; font-size: clamp(1.85rem, 5vw, 2.55rem); }
+    h2 { margin: 0 0 0.6rem; font-size: 1.24rem; }
+    .updated { margin-top: 0; color: var(--muted); font-size: 0.9rem; }
+    section { margin-top: 1.75rem; }
+    p { margin: 0.65rem 0 0; }
+    ul { margin: 0.55rem 0 0; padding-inline-start: 1.45rem; }
+    li + li { margin-top: 0.3rem; }
+    address { margin-top: 0.55rem; font-style: normal; }
+
+    @media print {
+      :root { color-scheme: light; --background: #fff; --surface: #fff; --text: #111; --muted: #333; --link: #222; }
+      .site-header { display: none; }
+      .wrap { width: 100%; }
+      article { margin: 0; padding: 0; border: 0; }
+      h1, h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <span class="brand">Meowtils</span>
+      <nav aria-label="文档导航">
+        <a href="./terms.html" aria-current="page">服务条款</a>
+        <a href="./privacy.html">隐私政策</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article aria-labelledby="document-title">
+      <header>
+        <h1 id="document-title">服务条款</h1>
+        <p class="updated">最后更新 <time datetime="2026-11-17">2026 年 11 月 17 日</time></p>
+        <p>本条款适用于由 Meowtils 项目维护者提供的 Discord 游戏活动分享功能（Rich Presence）。该功能用于在 Discord 展示你在 Minecraft 中的游戏状态。</p>
+      </header>
+
+      <section>
+        <h2>功能与使用条件</h2>
+        <p>Meowtils 通过你设备上运行的 Discord 桌面客户端更新活动卡片。活动卡片可展示游戏版本、当前游戏状态与游玩时长，实际可见范围取决于你的 Discord 活动分享和隐私设置。启用前请确认你愿意按这些设置共享游戏状态。</p>
+        <p>使用本功能时，你需要满足 Discord 的使用条件，并遵守 <a href="https://discord.com/terms">Discord 服务条款</a>、<a href="https://discord.com/guidelines">Discord 社区准则</a>和适用的 Minecraft 服务器规则。</p>
+      </section>
+
+      <section>
+        <h2>使用规则</h2>
+        <p>请分享你有权公开的内容。请勿利用本功能冒充他人、骚扰其他用户、发送垃圾内容，或绕过账号、服务器和隐私权限。</p>
+      </section>
+
+      <section>
+        <h2>停止共享</h2>
+        <p>你可以在 Discord 的「用户设置 → 活动分享」中关闭活动展示，也可以停止运行或卸载 Meowtils 来停止由它发送新的活动更新。管理已显示的活动历史，请参阅 <a href="./privacy.html#controls">隐私政策中的活动管理说明</a>。</p>
+      </section>
+
+      <section>
+        <h2>功能与条款变更</h2>
+        <p>Minecraft、Discord 或 Meowtils 的更新可能影响本功能的可用性。条款如有调整，维护者会更新本页并标明更新时间。本条款不限制适用法律赋予你的权利。</p>
+      </section>
+
+      <section>
+        <h2>支持与举报</h2>
+        <p>如需协助、反馈故障或举报滥用，请联系 Meowtils 项目维护者。</p>
+        <address>【待填写的公开支持邮箱或私密工单链接】</address>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
